@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="fantasy">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----- css style link added ----->
     <link rel="stylesheet" href="css/style.css">
+
+    <!----- daisy UI link added ----->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!----- google fonts added ----->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +24,31 @@
 <body>
     <!----- heading section start ----->
     <header>
-        <h1>Hello World</h1>
+        <!----- navbar start ----->
+        <div class="navbar bg-blue-200 mt-8 lg:px-1">
+            <div class="navbar-start">
+                <a class="text-3xl font-medium">Interactive<br><span class=" text-xl text-slate-500">Geometry
+                        Genius</span></a>
+            </div>
+            <div class="navbar-end">
+                <a id="blog-page" class="btn bg-sky-500 text-white">Blog</a>
+            </div>
+        </div>
+        <!----- navbar end ----->
     </header>
+    <!----- heading section end ----->
 
     <!----- main section start ----->
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deleniti sapiente nostrum porro explicabo, doloribus voluptatem? Aperiam dolorum nam est aliquam totam iste rerum praesentium earum, ex quo tempora assumenda quaerat accusamus pariatur similique molestias sit adipisci saepe possimus consequatur animi laudantium beatae! Accusamus delectus unde quam quasi, itaque ullam?</p>
+        <br>
+        <h1>Hello World</h1>
     </main>
+    <!----- main section end ----->
 
     <!----- js script link added ----->
     <script src="js/script.js"></script>
+
+    <script src="js/blog.js"></script>
 
 </body>
 
