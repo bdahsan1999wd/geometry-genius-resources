@@ -25,7 +25,7 @@
     <!----- heading section start ----->
     <header>
         <!----- navbar start ----->
-        <div class="navbar bg-blue-200 mt-8 lg:px-1">
+        <div class="navbar bg-blue-100 mt-8 lg:px-12 shadow-2xl">
             <div class="navbar-start">
                 <a class="text-3xl font-medium">Interactive<br><span class=" text-xl text-slate-500">Geometry
                         Genius</span></a>
@@ -41,18 +41,18 @@
     <!----- main section start ----->
     <main>
 
-        <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row bg-sky-700">
+        <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row">
 
             <!----- geometry card section start ----->
 
-            <div class="card-details w-75 mt-12 mb-12 gap-5 grid md:grid-cols-2 lg:grid-cols-3">
+            <div class="card-details w-[70%] mt-12 mb-12 gap-5 grid md:grid-cols-2 lg:grid-cols-3">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/triangle.png" alt="triangle" class="rounded-xl" />
+                        <img src="images/triangle.png" alt="triangle" class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Triangle</h2>
-                        <p>Area (A) = 0.5 x b x h</p>
+                        <p>Area (A) = <span>0.5</span> x <span>b</span> x <span>h</span></p>
                         <div class="flex justify-between gap-4">
                             <input class="bg-slate-200 w-20" type="text" placeholder=" b" />
                             <p>cm</p>
@@ -69,11 +69,11 @@
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Rectangle
-                          " class="rounded-xl" />
+                          " class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Rectangle</h2>
-                        <p>Area (A) = w x l</p>
+                        <p>Area (A) = <span>w</span> x <span>l</span></p>
                         <div class="flex justify-between gap-4">
                             <input class="bg-slate-200 w-20" type="text" placeholder=" w" />
                             <p>cm</p>
@@ -89,11 +89,11 @@
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/parallelogram.png" alt="triangle" class="rounded-xl" />
+                        <img src="images/parallelogram.png" alt="triangle" class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Parallelogram</h2>
-                        <p>Area (A) = b x h</p>
+                        <p>Area (A) = <span>b</span> x <span>h</span></p>
                         <h4 class="text-xl">b=<span>10cm</span>, h=<span>12</span></h4>
                         <div class="card-actions">
                             <button class="btn bg-sky-500 px-20 mt-6 text-lg">
@@ -104,11 +104,11 @@
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/rhombus.png" alt="triangle" class="rounded-xl" />
+                        <img src="images/rhombus.png" alt="triangle" class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Rhombus</h2>
-                        <p>Area (A) = 0.5 x d1 x h2</p>
+                        <p>Area (A) = <span>0.5</span> x <span>d1</span> x <span>d2</span></p>
                         <h4 class="text-xl">d1=<span>16cm</span>, d2=<span>8cm</span></h4>
                         <div class="card-actions">
                             <button class="btn bg-sky-500 px-20 mt-6 text-lg">
@@ -119,11 +119,11 @@
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/pentagon.png" alt="triangle" class="rounded-xl" />
+                        <img src="images/pentagon.png" alt="triangle" class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Pentagon</h2>
-                        <p>Area (A) = 0.5 x p x b</p>
+                        <p>Area (A) = <span>0.5</span> x <span>p</span> x <span>b</span></p>
                         <h4 class="text-xl">p=<span>6cm</span>, b=<span>10cm</span></h4>
                         <div class="card-actions">
                             <button class="btn bg-sky-500 px-20 mt-6 text-lg">
@@ -134,11 +134,11 @@
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/ellipse.png" alt="triangle" class="rounded-xl" />
+                        <img src="images/ellipse.png" alt="triangle" class="rounded-xl w-full h-40" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl">Triangle</h2>
-                        <p>Area (A) = πab</p>
+                        <p>Area (A) = <span>π</span><span>a</span><span>b</span></p>
                         <h4 class="text-xl">a =<span> 10cm</span>, b =<span> 4cm</span></h4>
                         <div class="card-actions">
                             <button class="btn bg-sky-500 px-20 mt-6 text-lg border-5px">
@@ -150,25 +150,29 @@
             </div>
             <!----- geometry card section end ----->
 
-            <!----- area calculation section start ----->
+            <!----- Area calculation section start ----->
 
-            <div class="area-calculation bg-blue-400 w-full md:w-[30%] lg:w-[30%] mx-6 mt-10 ">
+            <div class="calculation-area w-full md:w-[30%] lg:w-[30%] mx-auto mt-10 ">
                 <h3 class="text-2xl text-center font-bold mt-8 underline">Area calculation</h3>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
+                        <!-- head -->
                         <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
-                                <th>Total</th>
-                                <th><button>convert button</button></th>
+                                <th>Result</th>
+                                <th><button>Convert to m2</button></th>
                             </tr>
                         </thead>
+                        <tbody>
+
+                        </tbody>
                     </table>
                 </div>
             </div>
 
-            <!----- area calculation section end ----->
+            <!----- Area calculation section end ----->
 
         </section>
 
@@ -177,8 +181,6 @@
 
     <!----- js script link added ----->
     <script src="js/script.js"></script>
-
-    <script src="js/blog.js"></script>
 
 </body>
 
