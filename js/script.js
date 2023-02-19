@@ -2,8 +2,23 @@
 document.getElementById('blog-page').addEventListener('click', function () {
     window.location.href = 'blog.html';
   });
-  
-  
+
+// card random color added
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('mouseover', function() {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    card.style.backgroundColor = '#' + randomColor;
+  });
+
+  card.addEventListener('mouseout', function() {
+    card.style.backgroundColor = 'white';
+  });
+
+});
+
+
   // for first card
   document.getElementById('first-card').addEventListener('click', function () {
   
@@ -82,8 +97,8 @@ document.getElementById('blog-page').addEventListener('click', function () {
   });
   
   
-  // for six card
-  document.getElementById('six-card').addEventListener('click', function () {
+  // for sixth card
+  document.getElementById('sixth-card').addEventListener('click', function () {
   
     const cardName = document.getElementById('ellipse').innerText;
     const ellipseFieldNumber = Math.PI.toFixed(2);
